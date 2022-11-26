@@ -1,0 +1,9 @@
+Launch shell
+import model
+with open("name_of_json_file.json") as f:
+  posts_json = json.load(f)
+  
+  
+ for post in pots_json:
+      post = Post(title=post['title'], content=post[content], author_id=post['user_id'])
+      post.save()
